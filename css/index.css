@@ -258,16 +258,25 @@ footer {
   background-color: #22283B;
   color: white;
   cursor: pointer;
+  
 }
 .btn:hover {
   background-color: #0000e6;
 }
+@media only screen and (max-width:500px) { 
+  .btn {
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+  }
 
 .btn {
-  .custom.btn (105px, navy, white);
+  .custom.btn (105px, 22283B, white);
 }
 
-.custom-btn (@width: 100px, @bg-color: navy, @font-color: white) {
+.custom-btn (@width: 100px, @bg-color: 22283B, @font-color: white) {
   width: @width;
   background-color: @bg-color;
   color: @font-color;
