@@ -1,3 +1,9 @@
+.btn {
+  width: 105px;
+  background-color: navy;
+  color: white;
+  font-size: 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -154,91 +160,34 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  padding: 10px;
-
 }
-
-@phone: ~"(max-width: 500px)";
-
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-
-.container header nav {
-
-  margin-bottom: 20px;
+a:link {
+  text-decoration: none;
+}
+.container header h1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  font-size: 40px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+.container header nav {
   background-color: whitesmoke;
   font-size: 16px;
   color: black;
   width: 100%;
 }
-
-h1 {
-  padding: 10px 0;
-  text-align: center;
-  font-size: 40px;
-  background-color: whitesmoke;
-
-  @media @mobile {
-    margin-bottom; 20px;
-  }
-}
-
-a {
-  text-decoration: none;
-  color:black;
-}
-
-img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  padding: 10px 10px;
-}
-
-
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
-
-.home .space-images {
+.container nav {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
-
-.home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100;
-}
-
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
-}
-
-.home .walk {
-  margin-top: 60px;
-  border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
-  display: flex;
-  justify-content: center;
-}
-
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -249,38 +198,116 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-.btn {
-  font-size: 20px;
-  padding: 10px 20px;
-  margin-bottom: 30px;
+.intro h2 {
+  padding: 15px;
+}
+.intro p {
+  padding: 0 15px;
+}
+.main-header {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .main-header {
+    width: 100%;
+  }
+}
+.space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .space-images img {
+    width: 100%;
+  }
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
+  margin-top: 11px;
+}
+.visit-planets p {
+  margin-top: 13px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+}
+.walk-row {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  .walk-row {
+    flex-direction: column-reverse;
+  }
+}
+.walk-text {
+  width: 100%;
+}
+.walk-text h3 {
+  margin-bottom: 10px;
+}
+.walk-text p {
+  margin-bottom: 26px;
+}
+@media only screen and (max-width: 500px) {
+  .walk-text {
+    width: 100%;
+  }
+}
+.walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.walk-img img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  background-color: #22283B;
-  color: white;
-  cursor: pointer;
-  
 }
-.btn:hover {
-  background-color: #0000e6;
+@media only screen and (max-width: 500px) {
+  .walk-img {
+    width: 100%;
+  }
 }
-@media only screen and (max-width:500px) { 
+.blast {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .blast {
+    width: 100%;
+  }
+}
+.sky {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+}
+.launch {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .launch {
+    display: none;
+  }
+}
+.btn {
+  width: 100px;
+}
+@media only screen and (max-width: 500px) {
   .btn {
     width: 100%;
-    padding: 20px 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-
   }
-
-.btn {
-  .custom.btn (105px, 22283B, white);
-}
-
-.custom-btn (@width: 100px, @bg-color: 22283B, @font-color: white) {
-  width: @width;
-  background-color: @bg-color;
-  color: @font-color;
-  font-size: 2rem;
-
-
 }
